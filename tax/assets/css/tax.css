@@ -102,8 +102,27 @@
     .checklist li{display:flex;gap:10px;color:#e5edf3}
     .checklist li:before{content:"✓";color:var(--teal);font-weight:950}
     .deadline{
-      margin-top:22px;padding:14px 15px;border-radius:12px;background:rgba(242,201,109,.08);
-      border:1px solid rgba(242,201,109,.24);color:#f9df9f;font-size:.92rem
+      margin-top:22px;padding:16px 18px;border-radius:12px;
+      background:rgba(220,38,38,.11);border:1px solid rgba(248,113,113,.42);
+      box-shadow:0 0 0 0 rgba(248,113,113,.34)
+    }
+    .deadline strong{display:block;color:#ff9b93;font-size:.93rem;font-weight:850;margin-bottom:2px}
+    .deadline .date{
+      display:block;font-size:1.85rem;font-weight:950;letter-spacing:-.035em;line-height:1.15;
+      color:#ff6f63;margin:6px 0 4px
+    }
+    .deadline .days{
+      display:inline-block;margin:2px 0 7px;padding:4px 11px;border-radius:999px;
+      background:rgba(248,113,113,.17);border:1px solid rgba(248,113,113,.45);
+      color:#ffb3ac;font-size:.78rem;font-weight:900;letter-spacing:.03em
+    }
+    .deadline .sub{display:block;color:#f3b7b1;font-size:.86rem;line-height:1.5}
+    @media (prefers-reduced-motion: no-preference){
+      .deadline{animation:alarm 2.6s ease-in-out infinite}
+      @keyframes alarm{
+        0%,100%{box-shadow:0 0 0 0 rgba(248,113,113,.30)}
+        50%{box-shadow:0 0 0 7px rgba(248,113,113,0)}
+      }
     }
 
     .trust-strip{border-block:1px solid var(--line);background:rgba(255,255,255,.025)}

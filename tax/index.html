@@ -25,7 +25,7 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
   <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/assets/css/tax.css?v=0099a20d" />
+  <link rel="stylesheet" href="/assets/css/tax.css?v=daabc23b" />
 
   <script type="application/ld+json">
   {
@@ -119,12 +119,14 @@
           <ul class="offer-links">
             <li><a href="/income-tax-return-filing/">Get your return filed</a></li>
             <li><a href="/wealth-statement/">Get your filed return reviewed <span class="chip">AI-POWERED</span></a></li>
-            <li><a href="/iris-training/">Learn to file it yourself</a></li>
+            <li><a href="/iris-training/">Get hands-on training and file it yourself</a></li>
             <li><a href="/ntn-registration/">Register your NTN</a></li>
           </ul>
-          <div class="deadline">
-            <strong>Don't leave it until the deadline.</strong><br>
-            The standard FBR due date for individual/AOP income tax returns is September 30.
+          <div class="deadline" role="note">
+            <strong>Don't leave it until the deadline.</strong>
+            <span class="date">30 September 2026</span>
+            <span class="days" id="daysLeft"></span>
+            <span class="sub">FBR due date for individual and AOP income tax returns.</span>
           </div>
         </aside>
       </div>
@@ -505,5 +507,18 @@ Notes: ${data.message || "None"}`;
     // Contact on WhatsApp CTA click
   </script>
   -->
+
+  <script>
+  (function(){
+    var el=document.getElementById('daysLeft'); if(!el) return;
+    var due=new Date(2026,8,30,23,59,59); // 30 Sep 2026
+    var now=new Date();
+    var d=Math.ceil((due-now)/86400000);
+    if(d>1){el.textContent=d+' DAYS LEFT';}
+    else if(d===1){el.textContent='1 DAY LEFT';}
+    else if(d===0){el.textContent='LAST DAY TO FILE';}
+    else{el.textContent='DEADLINE PASSED, FILE NOW';}
+  })();
+  </script>
 </body>
 </html>
