@@ -320,19 +320,6 @@
     .sources a{color:var(--teal2)}
     .updated{color:var(--muted);font-size:.86rem;margin:0 0 4px}
 
-    /* ===== Hero offer list ===== */
-    .offer-list{list-style:none;padding:0;margin:0;display:grid;gap:18px}
-    .offer-list li{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start}
-    .offer-list li::before{content:"";width:22px;height:22px;border-radius:7px;margin-top:2px;
-      background:rgba(54,211,192,.16);border:1px solid rgba(54,211,192,.42);
-      background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2384f0df' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
-      background-size:14px;background-position:center;background-repeat:no-repeat}
-    .offer-list b{display:block;color:#f2f7fa;font-size:1.02rem;font-weight:800;margin-bottom:3px;line-height:1.35}
-    .offer-list span{display:block;color:var(--muted);font-size:.9rem;line-height:1.5}
-    .offer-list .tag{display:inline-block;margin-top:6px;padding:3px 9px;border-radius:999px;
-      background:rgba(54,211,192,.12);border:1px solid rgba(54,211,192,.3);
-      color:var(--teal2);font-size:.72rem;font-weight:800;letter-spacing:.03em}
-
     /* ===== Footer columns ===== */
     .foot-cols{display:grid;grid-template-columns:2.1fr 1fr 1fr 1fr;gap:36px}
     .foot-brand strong{display:block;color:#eaf2f7;font-size:1.02rem;margin-bottom:10px}
@@ -351,3 +338,15 @@
     @media(max-width:560px){
       .foot-cols{grid-template-columns:1fr}
     }
+
+    /* ===== Hero offer links ===== */
+    .offer-links{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+    .offer-links a{display:flex;align-items:center;gap:11px;padding:13px 12px;margin:0 -12px;
+      border-radius:11px;color:#eaf2f7;font-weight:750;font-size:1.02rem;transition:.16s ease}
+    .offer-links a:hover{background:rgba(54,211,192,.09);transform:translateX(2px)}
+    .offer-links a::after{content:"→";margin-left:auto;color:var(--teal);font-weight:900;
+      opacity:.55;transition:.16s ease}
+    .offer-links a:hover::after{opacity:1;transform:translateX(2px)}
+    .offer-links .chip{font-size:.66rem;font-weight:900;letter-spacing:.05em;padding:3px 8px;
+      border-radius:999px;background:rgba(54,211,192,.14);border:1px solid rgba(54,211,192,.34);
+      color:var(--teal2);white-space:nowrap}

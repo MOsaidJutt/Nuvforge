@@ -9,8 +9,11 @@ nuvforge.com, www.nuvforge.com {
     @www host www.nuvforge.com
     redir @www https://nuvforge.com{uri} permanent
 
-    @static path *.woff2 *.png *.jpg *.svg *.css *.js
-    header @static Cache-Control "public, max-age=2592000, immutable"
+    @immutable path *.woff2 *.png *.jpg *.svg
+    header @immutable Cache-Control "public, max-age=2592000, immutable"
+
+    @code path *.css *.js
+    header @code Cache-Control "public, max-age=3600, must-revalidate"
 
     header {
         X-Content-Type-Options nosniff
@@ -23,8 +26,11 @@ tax.nuvforge.com {
     file_server
     encode gzip zstd
 
-    @static path *.woff2 *.png *.jpg *.svg *.css *.js
-    header @static Cache-Control "public, max-age=2592000, immutable"
+    @immutable path *.woff2 *.png *.jpg *.svg
+    header @immutable Cache-Control "public, max-age=2592000, immutable"
+
+    @code path *.css *.js
+    header @code Cache-Control "public, max-age=3600, must-revalidate"
 
     header {
         X-Content-Type-Options nosniff
