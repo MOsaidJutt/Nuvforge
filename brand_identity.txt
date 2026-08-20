@@ -1,0 +1,311 @@
+NUVFORGE
+
+Brand Name: Nuvforge
+Spelling Rule: Always "Nuvforge" — capital N only, everywhere (documents, invoices, social handles, code). Never "NuvForge" or "NUVForge". All-caps "NUVFORGE" is allowed only as a stylistic display treatment.
+Domain: nuvforge.com
+Abbreviation / Monogram: NF
+
+Primary Tagline
+
+White-Label Software, Forged for Your Brand.
+
+Secondary Tagline
+
+Custom Software. Your Brand. Your Way.
+
+Supporting Line
+
+Got an idea? We turn it into reality.
+
+Brand Positioning
+
+Nuvforge is a global software agency that turns ideas into working solutions.
+
+Businesses come to us with a problem, a workflow that eats too much human effort, or an idea they want to see real. We forge the solution that fits — at whatever scale it needs to be. That can be as simple as an Excel dashboard, or as ambitious as a full AI-powered platform.
+
+Everything we build can be delivered white-label: the client's brand, front and center, powered by Nuvforge behind the scenes.
+
+Our sweet spot: taking ordinary websites, software, and business systems and making them AI-powered — automated workflows, intelligent responses, advanced analytics, and dramatically less manual work.
+
+Proof Points
+
+10+ years of agency experience delivering custom solutions.
+1000+ satisfied clients around the globe.
+Solutions delivered at every scale — from single dashboards to full multi-platform products.
+
+Brand Promise
+
+Your idea. Your brand. Forged into reality by Nuvforge.
+
+Brand Essence
+
+Ideas forged into AI-powered, white-label software.
+
+Core Brand Traits
+Elegant: Clean, professional, modern solutions.
+Custom: Software adapted to the client's brand and requirements.
+Scalable: Solutions designed to grow with the business.
+Reliable: Stable technology and dependable implementation — proven over a decade.
+Flexible: Software configured around the business instead of forcing the business into a rigid system.
+Innovative: Modern AI, automation, integrations, and software technologies.
+
+What Nuvforge Does
+
+Solutions at Any Scale
+
+If a client can imagine it, we can build it. A quick Excel dashboard that answers one question. A website that behaves exactly the way the business needs. Automated order processing. A full-fledged product. We match the solution to the problem — never the other way around.
+
+AI-Powered Systems
+
+We turn normal websites and software systems into AI-powered ones: AI agents, chatbots, intelligent workflows, prompt-driven analytics, and automated decision-making that reduce human effort.
+
+Workflow Automation
+
+We automate the repetitive work that slows businesses down — order processing, data entry, reporting, follow-ups, and internal operations.
+
+Custom Software Development
+
+When an off-the-shelf solution is not enough, we design and build software around the client's exact requirements.
+
+Web, Mobile & Desktop Applications
+
+We develop modern web apps, Android and iOS apps, and desktop applications — dashboards, customer interfaces, portals, and internal business tools.
+
+White-Label Software Solutions
+
+Everything we build can carry the client's brand and be positioned as their own product.
+
+CRM & Business Systems
+
+We customize CRM platforms, workflows, lead management systems, sales processes, and operational software.
+
+Software Integrations
+
+We connect software, APIs, CRMs, payment platforms, databases, marketing tools, and other business systems.
+
+Advanced Analytics & Dashboards
+
+We build reporting and analytics that turn business data into clear answers — from spreadsheet dashboards to AI-driven insight tools.
+
+Brand Architecture
+
+Nuvforge is the master brand — the forge.
+Products and solutions that come out of it use the "Nuv" prefix (e.g. NuvTax). Nuv-products inherit the Nuvforge palette and typography and may reuse the NF mark; they do not get unrelated visual identities. Client-facing white-label deployments carry the CLIENT's brand, not ours.
+
+Simple Elevator Pitch
+
+Nuvforge turns ideas into working software. Whether you need a workflow automated, a system made AI-powered, or a full app built from scratch, we forge the solution and put your brand on it.
+
+Shorter Elevator Pitch
+
+We turn your ideas into your branded software.
+
+Website Hero Copy
+Headline
+
+White-Label Software, Forged for Your Brand.
+
+Subheadline
+
+From automated workflows to full AI-powered apps — we turn your idea into working software under your own brand, without the cost and time of building everything from scratch.
+
+Supporting Line
+
+Custom Software. Your Brand. Your Way.
+
+CTA
+
+Build Your Solution
+
+Alternative CTA:
+
+Explore Our Software
+
+Brand Messaging Pillars
+1. Your Brand
+
+The customer remains front and center. The software looks and feels like their product.
+
+2. Your Way
+
+Software should adapt to the business, not the other way around.
+
+3. Any Idea, Any Scale
+
+From an Excel dashboard to a multi-platform AI product — if the client can imagine it, we can forge it.
+
+4. AI That Reduces Effort
+
+Automation, intelligent workflows, and advanced analytics that cut manual work and speed up decisions.
+
+5. Proven, Global, Reliable
+
+A decade of delivery. 1000+ satisfied clients worldwide.
+
+Possible Brand Slogans
+
+Primary recommendation:
+White-Label Software, Forged for Your Brand.
+
+Other strong options:
+
+Your Brand. Your Software.
+Software Built Around Your Brand.
+Your Software. Your Identity.
+Built by Nuvforge. Branded by You.
+Technology Made Yours.
+Power Your Brand With Better Software.
+From Software to Your Software.
+We Build It. You Brand It.
+Launch Software Under Your Name.
+Ideas In. Software Out.
+Imagine It. We Forge It.
+
+My strongest two are:
+
+White-Label Software, Forged for Your Brand.
+
+and
+
+Built by Nuvforge. Branded by You.
+
+The first is better for the overall company. The second is excellent for advertising.
+
+Logo Identity
+Primary Logo
+
+NF symbol + Nuvforge wordmark
+
+The N represents Nuvforge.
+
+The F represents Forge.
+
+The geometric construction represents software modules, customization, technology, and systems coming together.
+
+The small square element reinforces the idea of modular software components.
+
+Small-Size Rule: At favicon / very small sizes (16-32px) the small square element disappears into noise. The simplified favicon deliberately drops the square rather than letting it blur.
+
+Logo Versions
+
+You should ultimately have:
+
+Primary horizontal logo
+Stacked logo
+NF monogram
+App icon
+Favicon
+Full-color logo
+Black logo
+White/reversed logo
+Transparent-background versions
+
+Color Palette
+
+Deep Navy
+#0F172A
+
+Primary brand color. Use for headlines, navigation, backgrounds, premium corporate applications — and as TEXT ON TEAL BUTTONS.
+
+Nuvforge Teal
+#14B8A6
+
+Primary accent color. Use for button fills, icons, highlights, and technology elements. NOT for text on light backgrounds and NOT paired with white text (see Accessibility Rules).
+
+Dark Teal
+#0F766E
+
+Text-safe teal. Use for links, teal-colored text, and labels on light backgrounds (Off White / white).
+
+Slate Gray
+#64748B
+
+Secondary text and supporting information.
+
+Off White
+#F8FAFC
+
+Primary light background.
+
+Silver
+#C5CED8
+
+Borders, dividers, subtle interface elements, and secondary graphics.
+
+Accessibility Rules (WCAG AA)
+
+1. Buttons: Teal (#14B8A6) fill with Deep Navy (#0F172A) text — 7.2:1 contrast, passes AA. Never white text on teal (2.5:1, fails).
+2. Links & teal text on light backgrounds: use Dark Teal (#0F766E), not Nuvforge Teal (#14B8A6 on Off White is 2.4:1, fails).
+3. On Deep Navy backgrounds, Nuvforge Teal (#14B8A6) is fine for text and accents (7.2:1).
+
+Recommended Color Combination
+
+Deep Navy + Teal + Off White
+
+That should become the most recognizable Nuvforge visual combination.
+
+Typography
+Primary Heading Font
+
+Sora SemiBold
+
+Use for:
+
+Website headlines
+Presentation titles
+Marketing graphics
+Product names
+Calls to action
+
+Body Font
+
+Inter Regular
+
+Use for:
+
+Website copy
+Software interfaces
+Documents
+Proposals
+Emails
+Product descriptions
+
+Suggested Hierarchy
+
+Headline: Sora Bold / SemiBold
+Subheadline: Sora Medium
+Body: Inter Regular
+Buttons: Inter SemiBold
+Small labels: Inter Medium
+
+Brand Voice
+
+Nuvforge should sound:
+
+Clear. Modern. Smart. Confident. Simple.
+
+Avoid overly technical language when talking to customers.
+
+Instead of:
+
+We utilize API architecture and multi-tenant SaaS infrastructure.
+
+Say:
+
+We customize proven software around your business and put your brand on it.
+
+The customer should understand the business result before the technology.
+
+About Nuvforge
+
+Nuvforge turns ideas into working software.
+
+For over a decade, we have helped 1000+ businesses around the globe automate their workflows, solve operational problems, and launch software under their own brand.
+
+We build at every scale — from a simple dashboard that answers one question, to automated order processing, to full web, Android, iOS, and desktop applications — with a specialty in making ordinary systems AI-powered: intelligent automation, less human effort, and advanced analytics.
+
+Whatever you can imagine, we can forge. Your idea. Your brand. Our craft.
+
+Nuvforge.
+
+White-Label Software, Forged for Your Brand.

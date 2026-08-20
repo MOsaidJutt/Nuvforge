@@ -1,0 +1,158 @@
+NUVFORGE — AI LOGO GENERATION PROMPTS
+Brand colors: Deep Navy #0F172A | Teal #14B8A6 | Silver #C5CED8 | Off White #F8FAFC
+Fonts: Sora SemiBold (headings) | Inter Regular (body)
+Taglines: "White-Label Software, Forged for Your Brand." / "Custom Software. Your Brand. Your Way."
+
+=====================================================================
+PROMPT 1 — PRIMARY HORIZONTAL LOGO (main lockup)
+=====================================================================
+Design a modern, minimal, geometric tech company logo for a software
+agency called "Nuvforge".
+
+MARK: An interlocking "NF" monogram. The letter N is a bold, sharp,
+geometric form in deep navy (#0F172A) with a strong diagonal stroke.
+The letter F overlaps and interlocks with the N, built from clean
+horizontal bars in vibrant teal (#14B8A6). Add one small solid square
+in light silver (#C5CED8) at the lower right of the monogram as a
+modular accent, representing software components. The construction
+should look precise, architectural, and built from modular blocks —
+like software modules snapping together.
+
+LAYOUT: Horizontal lockup. The NF mark sits on the left. A thin
+vertical divider line separates it from the wordmark on the right.
+The wordmark reads "Nuvforge" in a clean modern geometric sans-serif
+(Sora SemiBold style), deep navy, with generous letter spacing.
+
+STYLE: Flat vector, sharp edges, no gradients, no 3D, no bevels, no
+shadows. Pure white background. Corporate, premium, elegant, confident.
+High resolution, centered, generous margins.
+
+=====================================================================
+PROMPT 2 — ICON-ONLY MARK (no text — most reliable output)
+=====================================================================
+A minimal flat vector geometric monogram logo mark combining the
+letters N and F. The N is a bold angular form in deep navy (#0F172A)
+with a strong diagonal. The F interlocks with it, formed from clean
+horizontal bars in vibrant teal (#14B8A6). One small solid square in
+light silver (#C5CED8) sits at the lower right as a modular accent.
+Sharp geometric construction, modular software-block aesthetic, flat
+design, no gradients, no shadows, no 3D. Pure white background,
+centered, symmetrical margins, high resolution, vector style.
+NO TEXT, NO LETTERING, NO WORDMARK — symbol only.
+
+=====================================================================
+PROMPT 3 — STACKED / VERTICAL LOGO
+=====================================================================
+A modern tech logo in a vertical stacked layout for "Nuvforge".
+Top: a geometric interlocking NF monogram — bold navy (#0F172A) N with
+a strong diagonal, interlocking teal (#14B8A6) F made of horizontal
+bars, and one small silver (#C5CED8) square accent at lower right.
+Below the mark, centered: the wordmark "Nuvforge" in a clean modern
+geometric sans-serif (Sora SemiBold style), deep navy.
+Below that, smaller and centered: "White-Label Software, Forged for
+Your Brand." in slate gray (#64748B).
+Flat vector design, sharp edges, no gradients or shadows, pure white
+background, balanced spacing, premium and corporate.
+
+=====================================================================
+PROMPT 4 — APP ICON (rounded square, dark)
+=====================================================================
+A modern app icon: a rounded-square tile with a solid deep navy
+(#0F172A) background. Centered on it, a geometric interlocking NF
+monogram — the N in crisp white (#FFFFFF) with a bold diagonal stroke,
+the F interlocking in vibrant teal (#14B8A6) made of horizontal bars,
+and a small silver (#C5CED8) square accent at the lower right.
+Flat design, sharp geometric edges, no gradients, no 3D, no shadows,
+strong contrast, generous padding inside the tile. Square 1:1 format,
+centered, high resolution. NO TEXT.
+
+=====================================================================
+PROMPT 5 — FAVICON / SMALL SIZE (simplified, square dropped)
+=====================================================================
+An ultra-simplified favicon: solid deep navy (#0F172A) rounded square.
+Centered, a bold geometric NF monogram — white (#FFFFFF) N with a
+strong diagonal, interlocking teal (#14B8A6) F made of thick
+horizontal bars. Maximum simplicity and thick strokes so it stays
+legible at 16 pixels. No small details, no accent square, no text,
+no gradients, no shadows. Flat vector, square 1:1, centered.
+
+=====================================================================
+PROMPT 6 — SOCIAL PROFILE AVATAR (circle)
+=====================================================================
+A circular social media profile avatar. Solid deep navy (#0F172A)
+circle. Centered inside, a bold geometric interlocking NF monogram —
+white (#FFFFFF) N with a strong diagonal, teal (#14B8A6) F formed of
+horizontal bars, small silver (#C5CED8) square accent at lower right.
+Flat vector, sharp edges, high contrast, generous padding inside the
+circle so nothing is clipped. No text, no gradients, no shadows.
+Perfect circle, 1:1 square canvas, centered, high resolution.
+
+=====================================================================
+PROMPT 7 — WHITE / REVERSED VERSION (for dark backgrounds)
+=====================================================================
+A geometric interlocking NF monogram logo mark on a solid deep navy
+(#0F172A) background. The N is crisp white (#FFFFFF) with a bold
+diagonal stroke. The F interlocks with it in vibrant teal (#14B8A6),
+built from horizontal bars. To the right, separated by a thin white
+divider line, the wordmark "Nuvforge" in white, clean modern geometric
+sans-serif (Sora SemiBold style), generous letter spacing.
+Flat vector, sharp edges, no gradients or shadows, horizontal lockup,
+premium corporate feel, high resolution.
+
+=====================================================================
+PROMPT 8 — FULL BRAND BOARD (one-page presentation sheet)
+=====================================================================
+A clean, professional brand identity presentation board on an off-white
+(#F8FAFC) background, organized in labeled sections with thin teal
+divider lines.
+
+Include:
+1. PRIMARY LOGO — horizontal NF monogram lockup with the "Nuvforge"
+   wordmark and the tagline "White-Label Software, Forged for Your Brand."
+2. LOGO VARIATIONS — stacked logo, icon-only mark, and a dark rounded
+   app icon
+3. COLOR PALETTE — five labeled swatches: Deep Navy #0F172A,
+   Teal #14B8A6, Slate Gray #64748B, Off White #F8FAFC, Silver #C5CED8
+4. TYPOGRAPHY — "Sora SemiBold" for headings and "Inter Regular" for body
+5. BRAND APPLICATIONS — a website header mockup, a business card, and a
+   circular social avatar
+
+Style: minimal, modern, corporate, lots of white space, flat vector
+graphics, navy and teal accents only. Landscape orientation, high
+resolution, crisp and legible labels.
+
+=====================================================================
+NEGATIVE PROMPT (paste where your tool supports it)
+=====================================================================
+gradients, 3D, bevel, emboss, drop shadow, glow, neon, metallic,
+chrome, glossy, reflections, texture, grunge, hand-drawn, sketch,
+watercolor, cartoon, mascot, clipart, stock icon, gears, circuit
+board, lightbulb, rocket, globe, swoosh, generic tech cliche,
+busy background, photo background, extra letters, misspelled text,
+distorted text, gibberish text, watermark, signature, low resolution,
+blurry, cluttered, too many colors
+
+=====================================================================
+TIPS
+=====================================================================
+1. AI image tools frequently misspell text. Best workflow:
+   generate the MARK ONLY (Prompt 2), then add the "Nuvforge" wordmark
+   yourself in Canva / Figma / Illustrator using real Sora SemiBold.
+   That guarantees correct spelling and true brand typography.
+
+2. Always check the spelling: "Nuvforge" — capital N only.
+   Not NuvForge, not Nuforge, not Nuvforce.
+
+3. If a tool ignores hex codes, describe them in words:
+   "very dark navy blue almost black", "bright turquoise teal",
+   "light silver gray".
+
+4. Ask for SVG output if your tool supports it (Recraft, Illustrator AI,
+   Vectorizer.ai). Otherwise generate PNG at the largest size available
+   and vectorize afterwards.
+
+5. Add "--ar 16:9" for horizontal lockups and "--ar 1:1" for icons
+   if you are using Midjourney. Add "--style raw" for cleaner,
+   less decorative results.
+
+6. Generate 4+ variations of each prompt, then pick and refine.

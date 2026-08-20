@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NuvTax by NuvForge helps Pakistan taxpayers review, understand and file income tax returns, register NTN, and learn FBR IRIS filing. Filing services start from PKR 3,500." />
+  <meta name="theme-color" content="#07131f" />
+  <meta property="og:title" content="NuvTax by NuvForge | Tax Filing Made Clear" />
+  <meta property="og:description" content="Review it. Understand it. File it. Income tax return filing from PKR 3,500." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tax.nuvforge.com/" />
+  <title>NuvTax by NuvForge | FBR Tax Return Filing & NTN Support</title>
+
+  <style>
+    :root{
+      --bg:#07131f;
+      --bg2:#0b1d2c;
+      --panel:#102637;
+      --panel2:#0d2231;
+      --text:#f6f8fb;
+      --muted:#aebdca;
+      --teal:#36d3c0;
+      --teal2:#84f0df;
+      --gold:#f2c96d;
+      --danger:#ff716b;
+      --line:rgba(255,255,255,.10);
+      --shadow:0 20px 60px rgba(0,0,0,.25);
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 10% -10%, rgba(54,211,192,.14), transparent 30%),
+        radial-gradient(circle at 90% 12%, rgba(242,201,109,.09), transparent 25%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    img{max-width:100%}
+
+    .wrap{width:min(var(--max), calc(100% - 36px));margin:auto}
+    .nav{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(18px);
+      background:rgba(7,19,31,.82);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px
+    }
+    .brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.02em}
+    .brand-mark{
+      width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+      color:#052019;background:linear-gradient(135deg,var(--teal2),var(--teal));
+      box-shadow:0 8px 25px rgba(54,211,192,.18);
+      font-weight:950;
+    }
+    .brand small{color:var(--muted);font-weight:650}
+    .nav-links{display:flex;align-items:center;gap:24px;color:#d6e0e8;font-size:.95rem}
+    .nav-cta{
+      padding:11px 17px;border-radius:10px;background:var(--teal);color:#06201d;font-weight:850
+    }
+
+    .hero{padding:82px 0 58px}
+    .hero-grid{display:grid;grid-template-columns:1.16fr .84fr;gap:54px;align-items:center}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:9px;padding:7px 12px;
+      border:1px solid rgba(54,211,192,.25);border-radius:999px;
+      background:rgba(54,211,192,.08);color:var(--teal2);font-weight:750;font-size:.84rem
+    }
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px rgba(54,211,192,.12)}
+    h1{
+      font-size:clamp(2.8rem,6vw,5.35rem);line-height:.96;letter-spacing:-.065em;
+      margin:22px 0 22px;max-width:820px
+    }
+    .accent{color:var(--teal2)}
+    .hero p{font-size:1.16rem;color:#c1ced8;max-width:720px;margin:0 0 30px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+    .btn{
+      border:0;cursor:pointer;border-radius:12px;padding:14px 20px;font-weight:850;
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;transition:.2s ease
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--teal);color:#06201d;box-shadow:0 12px 34px rgba(54,211,192,.16)}
+    .btn-secondary{background:rgba(255,255,255,.06);border:1px solid var(--line);color:white}
+    .micro{font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:16px}
+    .micro span::before{content:"✓";color:var(--teal);margin-right:7px;font-weight:900}
+
+    .hero-card{
+      background:linear-gradient(180deg,rgba(16,38,55,.96),rgba(10,29,43,.96));
+      border:1px solid rgba(255,255,255,.10);border-radius:24px;padding:28px;
+      box-shadow:var(--shadow);position:relative;overflow:hidden
+    }
+    .hero-card:before{
+      content:"";position:absolute;right:-70px;top:-70px;width:190px;height:190px;border-radius:50%;
+      background:rgba(54,211,192,.08)
+    }
+    .price-label{color:var(--muted);font-size:.9rem;font-weight:700}
+    .price{font-size:3.3rem;font-weight:950;letter-spacing:-.055em;margin:4px 0}
+    .price small{font-size:1rem;color:var(--muted);letter-spacing:0;font-weight:650}
+    .card-rule{height:1px;background:var(--line);margin:22px 0}
+    .checklist{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+    .checklist li{display:flex;gap:10px;color:#e5edf3}
+    .checklist li:before{content:"✓";color:var(--teal);font-weight:950}
+    .deadline{
+      margin-top:22px;padding:14px 15px;border-radius:12px;background:rgba(242,201,109,.08);
+      border:1px solid rgba(242,201,109,.24);color:#f9df9f;font-size:.92rem
+    }
+
+    .trust-strip{border-block:1px solid var(--line);background:rgba(255,255,255,.025)}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .trust-item{padding:22px;text-align:center;border-right:1px solid var(--line)}
+    .trust-item:last-child{border-right:0}
+    .trust-item strong{display:block;font-size:1.05rem}
+    .trust-item span{font-size:.82rem;color:var(--muted)}
+
+    section{padding:84px 0}
+    .section-kicker{color:var(--teal);font-weight:850;text-transform:uppercase;letter-spacing:.13em;font-size:.78rem}
+    h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;letter-spacing:-.045em;margin:10px 0 16px}
+    .lead{color:var(--muted);font-size:1.08rem;max-width:760px;margin-bottom:36px}
+
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .service{
+      background:rgba(16,38,55,.72);border:1px solid var(--line);border-radius:18px;padding:22px;min-height:215px
+    }
+    .service .num{color:var(--teal);font-weight:900;font-size:.8rem}
+    .service h3{font-size:1.18rem;margin:13px 0 9px}
+    .service p{color:var(--muted);font-size:.94rem;margin:0}
+
+    .statement{
+      background:linear-gradient(135deg,rgba(54,211,192,.12),rgba(242,201,109,.07));
+      border:1px solid rgba(54,211,192,.22);border-radius:24px;padding:38px;
+      display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center
+    }
+    .statement h2{margin-top:0}
+    .statement-steps{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .pill{
+      background:rgba(7,19,31,.55);border:1px solid var(--line);border-radius:13px;padding:14px 15px;
+      font-weight:780
+    }
+    .pill span{display:block;color:var(--teal);font-size:.75rem;margin-bottom:3px}
+
+    .docs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .doc{
+      padding:17px 18px;border-radius:14px;background:rgba(255,255,255,.035);
+      border:1px solid var(--line);color:#dce6ed
+    }
+    .doc b{color:var(--teal2);display:block;margin-bottom:4px}
+    .doc small{color:var(--muted)}
+
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .price-card{
+      border:1px solid var(--line);background:rgba(16,38,55,.72);border-radius:20px;padding:26px;display:flex;flex-direction:column
+    }
+    .price-card.featured{border-color:rgba(54,211,192,.48);box-shadow:0 20px 60px rgba(54,211,192,.08);position:relative}
+    .popular{
+      position:absolute;right:18px;top:18px;background:var(--teal);color:#06201d;
+      font-size:.72rem;padding:5px 9px;border-radius:999px;font-weight:900
+    }
+    .price-card h3{font-size:1.28rem;margin:0 0 6px}
+    .price-card .amount{font-size:2.45rem;font-weight:950;letter-spacing:-.045em;margin:14px 0}
+    .price-card .amount small{font-size:.82rem;color:var(--muted);letter-spacing:0}
+    .price-card p{color:var(--muted);font-size:.92rem}
+    .price-card ul{padding-left:18px;color:#dde6ed;flex:1}
+    .price-card li{margin:8px 0}
+    .price-card .btn{width:100%;margin-top:10px}
+
+    .process{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .process-card{padding:20px 18px;border-top:2px solid var(--teal);background:rgba(255,255,255,.03);border-radius:0 0 14px 14px}
+    .process-card strong{display:block;margin:7px 0}
+    .process-card span{color:var(--muted);font-size:.88rem}
+
+    .form-wrap{
+      display:grid;grid-template-columns:.88fr 1.12fr;gap:34px;align-items:start;
+      background:var(--panel2);border:1px solid var(--line);border-radius:24px;padding:32px
+    }
+    .form-side p{color:var(--muted)}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+    .field{display:grid;gap:6px}
+    .field.full{grid-column:1/-1}
+    label{font-size:.82rem;color:#c7d4dd;font-weight:750}
+    input,select,textarea{
+      width:100%;border:1px solid var(--line);background:#071722;color:white;border-radius:10px;
+      padding:12px 13px;outline:none
+    }
+    input:focus,select:focus,textarea:focus{border-color:rgba(54,211,192,.55)}
+    textarea{min-height:90px;resize:vertical}
+    .form-note{grid-column:1/-1;color:var(--muted);font-size:.76rem;margin:0}
+    .success{
+      display:none;grid-column:1/-1;padding:12px;border-radius:10px;
+      background:rgba(54,211,192,.10);border:1px solid rgba(54,211,192,.25);color:var(--teal2)
+    }
+
+    .faq{display:grid;gap:10px;max-width:900px}
+    details{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+    summary{cursor:pointer;font-weight:820}
+    details p{color:var(--muted);margin-bottom:4px}
+
+    .final-cta{
+      text-align:center;background:linear-gradient(135deg,rgba(54,211,192,.14),rgba(16,38,55,.6));
+      border:1px solid rgba(54,211,192,.22);border-radius:26px;padding:52px 22px
+    }
+    .final-cta p{color:var(--muted);max-width:680px;margin:0 auto 22px}
+
+    footer{padding:34px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
+    .foot{display:grid;grid-template-columns:1fr auto;gap:20px}
+    .legal{max-width:780px}
+    .legal strong{color:#dce6ed}
+
+    .whatsapp{
+      position:fixed;right:20px;bottom:20px;z-index:60;
+      width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+      background:#25D366;color:#052112;font-size:1.5rem;font-weight:950;box-shadow:0 14px 35px rgba(0,0,0,.28)
+    }
+
+    @media (max-width:950px){
+      .hero-grid,.statement,.form-wrap{grid-template-columns:1fr}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .pricing{grid-template-columns:1fr}
+      .process{grid-template-columns:repeat(2,1fr)}
+      .trust-grid{grid-template-columns:repeat(2,1fr)}
+      .trust-item:nth-child(2){border-right:0}
+      .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      .nav-links a:not(.nav-cta){display:none}
+    }
+    @media (max-width:620px){
+      .hero{padding-top:55px}
+      .services,.docs,.process,.statement-steps{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+      .field.full,.form-note,.success{grid-column:auto}
+      .hero-actions .btn{width:100%}
+      .trust-grid{grid-template-columns:1fr}
+      .trust-item{border-right:0;border-bottom:1px solid var(--line)}
+      .trust-item:last-child{border-bottom:0}
+      .foot{grid-template-columns:1fr}
+      .brand small{display:none}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"NuvTax by NuvForge",
+    "url":"https://tax.nuvforge.com/",
+    "description":"Income tax return filing, NTN registration, return review and hands-on FBR IRIS filing support in Pakistan.",
+    "areaServed":"Pakistan",
+    "priceRange":"PKR 3500+"
+  }
+  </script>
+</head>
+
+<body>
+  <!--
+    NUvTAX SETUP NOTES:
+    1) Replace 923001234567 everywhere with your WhatsApp number in international format.
+    2) Replace hello@nuvforge.com with your preferred email.
+    3) Connect the lead form to your backend/Formspree/Make webhook before launch.
+    4) Add Meta Pixel and Google Analytics scripts in <head> when ready.
+  -->
+
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="NuvTax Home">
+        <div class="brand-mark">N</div>
+        <div>NuvTax <small>by NuvForge</small></div>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#documents">What You Need</a>
+        <a class="nav-cta" href="https://wa.me/923001234567?text=Hi%20NuvTax%2C%20I%20need%20help%20with%20my%20income%20tax%20return." target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Pakistan Income Tax Support</div>
+          <h1>File it.<br><span class="accent">Understand it.</span><br>Own it.</h1>
+          <p>
+            Clear, guided income tax return filing for people who want more than “just submit it.”
+            We help you review the numbers, understand what is being declared, and file with confidence.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/923001234567?text=Hi%20NuvTax%2C%20I%20want%20to%20start%20my%20tax%20return%20filing." target="_blank" rel="noopener">Start on WhatsApp →</a>
+            <a class="btn btn-secondary" href="#pricing">See Services & Pricing</a>
+          </div>
+          <div class="micro">
+            <span>Starting from PKR 3,500</span>
+            <span>NTN support</span>
+            <span>Return review</span>
+            <span>Hands-on training</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Tax filing offer">
+          <div class="price-label">Straightforward salaried return filing</div>
+          <div class="price">PKR 3,500 <small>starting from</small></div>
+          <div class="card-rule"></div>
+          <ul class="checklist">
+            <li>Income & salary review</li>
+            <li>Tax deduction review</li>
+            <li>Bank information review</li>
+            <li>Asset & liability information</li>
+            <li>Income Tax Return preparation</li>
+            <li>Wealth Statement support</li>
+            <li>Submission guidance & final copy</li>
+          </ul>
+          <div class="deadline">
+            <strong>Don't leave it until the deadline.</strong><br>
+            The standard FBR due date for individual/AOP income tax returns is September 30.
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <div class="trust-strip">
+      <div class="wrap trust-grid">
+        <div class="trust-item"><strong>Review</strong><span>Know what's going into your return</span></div>
+        <div class="trust-item"><strong>Understand</strong><span>Plain-language explanation</span></div>
+        <div class="trust-item"><strong>File</strong><span>Structured filing support</span></div>
+        <div class="trust-item"><strong>Learn</strong><span>Hands-on IRIS training available</span></div>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-kicker">What we do</div>
+        <h2>Tax filing without the confusion.</h2>
+        <p class="lead">
+          Choose the support you need, from first-time NTN registration to a complete return review,
+          filing service or guided training session.
+        </p>
+
+        <div class="services">
+          <article class="service">
+            <div class="num">01</div>
+            <h3>Return Review</h3>
+            <p>Already filed or have a draft? We help you understand the declared income, assets, bank information, taxes and Wealth Statement.</p>
+          </article>
+          <article class="service">
+            <div class="num">02</div>
+            <h3>NTN Registration</h3>
+            <p>Support for first-time taxpayers who need registration before they can file their Income Tax Return through IRIS.</p>
+          </article>
+          <article class="service">
+            <div class="num">03</div>
+            <h3>Return Filing</h3>
+            <p>Structured preparation and filing support for salaried taxpayers, with more complex cases quoted separately.</p>
+          </article>
+          <article class="service">
+            <div class="num">04</div>
+            <h3>Hands-on Training</h3>
+            <p>Learn the filing workflow so you can better understand IRIS, your return and the information you submit.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap statement">
+        <div>
+          <div class="section-kicker">Our difference</div>
+          <h2>Don't just file a return you don't understand.</h2>
+          <p class="lead" style="margin-bottom:0">
+            Your tax return represents your financial information. Our approach is built around clarity,
+            proper document review and helping you understand what is being submitted in your name.
+          </p>
+        </div>
+        <div class="statement-steps">
+          <div class="pill"><span>STEP 1</span>Review</div>
+          <div class="pill"><span>STEP 2</span>Understand</div>
+          <div class="pill"><span>STEP 3</span>Approve</div>
+          <div class="pill"><span>STEP 4</span>File</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="documents">
+      <div class="wrap">
+        <div class="section-kicker">Get tax-ready</div>
+        <h2>What we may need from you.</h2>
+        <p class="lead">
+          The exact documents depend on your tax situation. These are common items used to review and prepare a straightforward individual return.
+        </p>
+
+        <div class="docs">
+          <div class="doc"><b>CNIC & NTN</b><small>Identity and existing tax registration details</small></div>
+          <div class="doc"><b>Salary Details</b><small>Annual salary certificate, salary income and employer tax deductions</small></div>
+          <div class="doc"><b>Bank Information</b><small>Relevant bank statements, credits/debits and balance as of June 30</small></div>
+          <div class="doc"><b>Assets</b><small>Property, vehicles, cash, investments and other applicable assets</small></div>
+          <div class="doc"><b>Liabilities</b><small>Loans, financing and applicable outstanding liabilities</small></div>
+          <div class="doc"><b>Other Income</b><small>Freelance, business, rent, bank profit, investments or other sources</small></div>
+          <div class="doc"><b>Taxes Paid/Deducted</b><small>Applicable withholding and advance tax information</small></div>
+          <div class="doc"><b>Previous Return</b><small>Prior return and Wealth Statement, where applicable</small></div>
+          <div class="doc"><b>Changes During the Year</b><small>Assets purchased/sold and other material changes to your financial position</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <div class="section-kicker">Simple pricing</div>
+        <h2>Choose the level of help you need.</h2>
+        <p class="lead">
+          Final pricing depends on complexity, number of income sources, business activity, assets and the condition of your records.
+        </p>
+
+        <div class="pricing">
+          <article class="price-card">
+            <h3>Return Review</h3>
+            <p>For taxpayers who already have a filed return or draft and want to understand it.</p>
+            <div class="amount">PKR 2,500 <small>from</small></div>
+            <ul>
+              <li>Return overview</li>
+              <li>Declared income review</li>
+              <li>Assets & Wealth Statement review</li>
+              <li>Plain-language explanation</li>
+            </ul>
+            <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://wa.me/923001234567?text=Hi%20NuvTax%2C%20I%20want%20a%20Return%20Review.">Request Review</a>
+          </article>
+
+          <article class="price-card featured">
+            <div class="popular">MOST POPULAR</div>
+            <h3>Smart Return Filing</h3>
+            <p>For straightforward salaried taxpayers who want their return prepared and explained.</p>
+            <div class="amount">PKR 3,500 <small>from</small></div>
+            <ul>
+              <li>Salary & tax deduction review</li>
+              <li>Bank and asset information review</li>
+              <li>Return preparation</li>
+              <li>Wealth Statement support</li>
+              <li>Filing support</li>
+              <li>Final return copy</li>
+            </ul>
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/923001234567?text=Hi%20NuvTax%2C%20I%20want%20Smart%20Return%20Filing%20starting%20from%20PKR%203%2C500.">Start Filing</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Guided / Complex Filing</h3>
+            <p>For freelancers, business income, multiple income sources or clients needing more guidance.</p>
+            <div class="amount">Custom <small>quote</small></div>
+            <ul>
+              <li>Complexity review</li>
+              <li>Multiple income source support</li>
+              <li>Document gap identification</li>
+              <li>Guided explanation</li>
+              <li>Training option available</li>
+            </ul>
+            <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://wa.me/923001234567?text=Hi%20NuvTax%2C%20I%20need%20a%20quote%20for%20a%20freelancer%2Fbusiness%2Fcomplex%20return.">Get a Quote</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-kicker">How it works</div>
+        <h2>From WhatsApp to filed.</h2>
+        <p class="lead">A simple process designed to keep the work organized and your information clear.</p>
+
+        <div class="process">
+          <div class="process-card"><span>01</span><strong>Tell us what you need</strong><span>Start on WhatsApp and answer a few qualification questions.</span></div>
+          <div class="process-card"><span>02</span><strong>Get your checklist</strong><span>We tell you which documents and information apply to your situation.</span></div>
+          <div class="process-card"><span>03</span><strong>We review</strong><span>Your income, deductions, accounts, assets and relevant information are reviewed.</span></div>
+          <div class="process-card"><span>04</span><strong>You understand</strong><span>Questions and material issues are clarified before final submission.</span></div>
+          <div class="process-card"><span>05</span><strong>Complete & save</strong><span>Receive your filing completion information and keep your final records.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lead">
+      <div class="wrap form-wrap">
+        <div class="form-side">
+          <div class="section-kicker">Start here</div>
+          <h2>What kind of help do you need?</h2>
+          <p>
+            Complete this short form and we will prepare a WhatsApp message with your request.
+            Do not upload passwords, bank statements or confidential documents through this public form.
+          </p>
+          <p><strong style="color:var(--teal2)">Privacy first:</strong> sensitive financial documents should only be shared through the secure process provided after qualification.</p>
+        </div>
+
+        <form id="leadForm">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" required placeholder="Full name" />
+          </div>
+          <div class="field">
+            <label for="phone">WhatsApp number</label>
+            <input id="phone" name="phone" required placeholder="03xx xxxxxxx" />
+          </div>
+          <div class="field full">
+            <label for="service">I need help with</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Income Tax Return Filing</option>
+              <option>NTN Registration</option>
+              <option>Return Review / Understanding</option>
+              <option>Hands-on Filing Training</option>
+              <option>Freelancer / Business Return</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="type">Taxpayer type</label>
+            <select id="type" name="type">
+              <option>Salaried</option>
+              <option>Freelancer</option>
+              <option>Business / Self-employed</option>
+              <option>Multiple Income Sources</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="registered">Already registered on IRIS?</label>
+            <select id="registered" name="registered">
+              <option>Yes</option>
+              <option>No</option>
+              <option>Not Sure</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">Anything we should know?</label>
+            <textarea id="message" name="message" placeholder="Example: First-time filer, salaried employee, one bank account..."></textarea>
+          </div>
+          <p class="form-note">Please do not enter your CNIC, passwords, bank account numbers or other sensitive financial data here.</p>
+          <div id="success" class="success">Opening WhatsApp with your request…</div>
+          <button class="btn btn-primary field full" type="submit">Continue on WhatsApp →</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-kicker">Questions</div>
+        <h2>Frequently asked.</h2>
+        <div class="faq">
+          <details>
+            <summary>Is NuvTax part of FBR?</summary>
+            <p>No. NuvTax by NuvForge is an independent tax support service and is not affiliated with, endorsed by or operated by the Federal Board of Revenue.</p>
+          </details>
+          <details>
+            <summary>Is every return PKR 3,500?</summary>
+            <p>No. PKR 3,500 is the starting fee for straightforward salaried return filing. More complex cases may require a separate quote.</p>
+          </details>
+          <details>
+            <summary>Why do you need my June 30 balance and asset information?</summary>
+            <p>Individual filing may require both an Income Tax Return and Wealth Statement. The information needed depends on your tax position and filing requirements.</p>
+          </details>
+          <details>
+            <summary>Can you teach me how to file my own return?</summary>
+            <p>Yes. Hands-on filing training is available for people who want to understand the IRIS workflow and become more confident managing their own tax filing.</p>
+          </details>
+          <details>
+            <summary>Can I send all my documents over WhatsApp?</summary>
+            <p>We recommend using the secure document-sharing process provided after your initial qualification instead of placing sensitive financial records in a public form.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap final-cta">
+        <div class="section-kicker">Don't wait for deadline pressure</div>
+        <h2>Get your return started early.</h2>
+        <p>Know what you need, organize your documents and get help before the last-minute filing rush.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/923001234567?text=Hi%20NuvTax%2C%20I%20want%20to%20get%20tax-ready%20and%20start%20my%20return.">Start on WhatsApp →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div class="legal">
+        <strong>NuvTax by NuvForge</strong><br>
+        Independent tax support and education service. NuvTax is not affiliated with, endorsed by or operated by Pakistan's Federal Board of Revenue (FBR).
+        Information on this website is general in nature and should not be treated as legal or tax advice for every individual situation.
+      </div>
+      <div>© <span id="year"></span> NuvForge. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"
+     href="https://wa.me/923001234567?text=Hi%20NuvTax%2C%20I%20need%20help%20with%20my%20tax%20return."
+     target="_blank" rel="noopener">W</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // IMPORTANT: Replace with your WhatsApp number in international format, no + or spaces.
+    const whatsappNumber = "923001234567";
+
+    document.getElementById('leadForm').addEventListener('submit', function(e){
+      e.preventDefault();
+
+      const data = {
+        name: document.getElementById('name').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        service: document.getElementById('service').value,
+        type: document.getElementById('type').value,
+        registered: document.getElementById('registered').value,
+        message: document.getElementById('message').value.trim()
+      };
+
+      const text =
+`Hi NuvTax, I would like help with my taxes.
+
+Name: ${data.name}
+My WhatsApp: ${data.phone}
+Service: ${data.service}
+Taxpayer type: ${data.type}
+Registered on IRIS: ${data.registered}
+Notes: ${data.message || "None"}`;
+
+      document.getElementById('success').style.display = 'block';
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
+    });
+  </script>
+
+  <!-- META PIXEL PLACEHOLDER
+  <script>
+    // Paste your Meta Pixel base code here.
+    // Recommended events:
+    // ViewContent on page load
+    // Lead when form is submitted
+    // Contact on WhatsApp CTA click
+  </script>
+  -->
+</body>
+</html>
