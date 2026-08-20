@@ -13,39 +13,41 @@ Both pages are fully static (self-hosted fonts, inline CSS/JS, no build step).
 
 ## Go-live runbook
 
-### 1. VPS (Hostinger KVM4)
+### 1. VPS (already deployed)
 
-SSH into the VPS and run:
+The VPS at `2.25.211.34` runs **Caddy in Docker** (compose at `/root/Eliseenterprise.com/`),
+already serving `plainview.works`. Nuvforge is served by that same Caddy instance:
+
+- Files live at `/var/www/nuvforge` (this repo, cloned)
+- Caddy mounts it read-only at `/srv/nuvforge`
+- Site blocks are in `/root/Eliseenterprise.com/Caddyfile` (see `deploy/Caddyfile.snippet`)
+
+To publish updates after pushing to GitHub:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/MOsaidJutt/Nuvforge/main/deploy/deploy.sh | bash
+ssh root@2.25.211.34 'git -C /var/www/nuvforge pull'
 ```
 
-or clone the repo and run `bash deploy/deploy.sh`. It clones/pulls this repo to
-`/var/www/nuvforge`, installs the nginx config and reloads nginx.
+No restart needed. Caddy serves the files straight from disk.
 
-> If the existing site on this VPS runs on **Apache or a control panel**
-> (CyberPanel, CloudPanel, hPanel VPS templates), do NOT install nginx alongside it.
-> Tell Claude what is running and the config will be adapted.
+### 2. Cloudflare DNS (the remaining blocker)
 
-### 2. Cloudflare DNS (nuvforge.com)
+Add these three records in Cloudflare for `nuvforge.com`:
 
 | Type | Name | Content | Proxy |
 |---|---|---|---|
-| A | `@` | VPS IP | Proxied |
-| A | `tax` | VPS IP | Proxied |
-| CNAME | `www` | `nuvforge.com` | Proxied |
+| A | `@` | `2.25.211.34` | **DNS only (grey cloud)** |
+| A | `tax` | `2.25.211.34` | **DNS only (grey cloud)** |
+| CNAME | `www` | `nuvforge.com` | **DNS only (grey cloud)** |
 
-### 3. SSL
+Set them to **DNS only** first. Caddy then issues real Let's Encrypt certificates
+automatically within about a minute of the records propagating, and both sites go live on HTTPS.
 
-Recommended (no renewals, works behind Cloudflare proxy):
+### 3. Optional: turn on the Cloudflare proxy
 
-1. Cloudflare dashboard -> SSL/TLS -> **Origin Server** -> Create Certificate
-   (hosts: `nuvforge.com`, `*.nuvforge.com`, 15 years).
-2. Save as `/etc/ssl/cloudflare/nuvforge.pem` and `/etc/ssl/cloudflare/nuvforge.key` on the VPS.
-3. Uncomment the SSL lines in `deploy/nginx-nuvforge.conf`, reload nginx.
-4. Cloudflare SSL/TLS mode -> **Full (strict)**.
-5. SSL/TLS -> Edge Certificates -> enable **Always Use HTTPS**.
+Once HTTPS works end to end, you can switch the records to **Proxied (orange cloud)** for
+CDN and DDoS protection. If you do, set Cloudflare SSL/TLS mode to **Full (strict)**, never
+Flexible. Leaving them on DNS only is perfectly fine too.
 
 ### 4. Google indexing (do this the day the site is live)
 

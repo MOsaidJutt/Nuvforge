@@ -21,248 +21,11 @@
   <meta name="twitter:title" content="Income Tax Return Filing in Pakistan from PKR 3,500 | NuvTax" />
   <meta name="twitter:description" content="FBR return filing, NTN registration and IRIS help on WhatsApp. Review it. Understand it. File it." />
   <meta name="twitter:image" content="https://tax.nuvforge.com/assets/img/og.png" />
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
-  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-  <style>
-    @font-face{
-      font-family:"Inter";
-      font-style:normal;
-      font-weight:400 600;
-      font-display:swap;
-      src:url("assets/fonts/inter-latin.woff2") format("woff2");
-    }
-    :root{
-      --bg:#07131f;
-      --bg2:#0b1d2c;
-      --panel:#102637;
-      --panel2:#0d2231;
-      --text:#f6f8fb;
-      --muted:#aebdca;
-      --teal:#36d3c0;
-      --teal2:#84f0df;
-      --gold:#f2c96d;
-      --danger:#ff716b;
-      --line:rgba(255,255,255,.10);
-      --shadow:0 20px 60px rgba(0,0,0,.25);
-      --max:1180px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 10% -10%, rgba(54,211,192,.14), transparent 30%),
-        radial-gradient(circle at 90% 12%, rgba(242,201,109,.09), transparent 25%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.55;
-    }
-    a{color:inherit;text-decoration:none}
-    button,input,select,textarea{font:inherit}
-    img{max-width:100%}
-
-    .wrap{width:min(var(--max), calc(100% - 36px));margin:auto}
-    .nav{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter:blur(18px);
-      background:rgba(7,19,31,.82);
-      border-bottom:1px solid var(--line);
-    }
-    .nav-inner{
-      min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px
-    }
-    .brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.02em}
-    .brand-mark{
-      width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
-      color:#052019;background:linear-gradient(135deg,var(--teal2),var(--teal));
-      box-shadow:0 8px 25px rgba(54,211,192,.18);
-      font-weight:950;
-    }
-    .brand small{color:var(--muted);font-weight:650}
-    .nav-links{display:flex;align-items:center;gap:24px;color:#d6e0e8;font-size:.95rem}
-    .nav-cta{
-      padding:11px 17px;border-radius:10px;background:var(--teal);color:#06201d;font-weight:850
-    }
-
-    .hero{padding:82px 0 58px}
-    .hero-grid{display:grid;grid-template-columns:1.16fr .84fr;gap:54px;align-items:center}
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:9px;padding:7px 12px;
-      border:1px solid rgba(54,211,192,.25);border-radius:999px;
-      background:rgba(54,211,192,.08);color:var(--teal2);font-weight:750;font-size:.84rem
-    }
-    .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px rgba(54,211,192,.12)}
-    h1{
-      font-size:clamp(2.8rem,6vw,5.35rem);line-height:.96;letter-spacing:-.065em;
-      margin:22px 0 22px;max-width:820px
-    }
-    .accent{color:var(--teal2)}
-    .hero p{font-size:1.16rem;color:#c1ced8;max-width:720px;margin:0 0 30px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
-    .btn{
-      border:0;cursor:pointer;border-radius:12px;padding:14px 20px;font-weight:850;
-      display:inline-flex;align-items:center;justify-content:center;gap:9px;transition:.2s ease
-    }
-    .btn:hover{transform:translateY(-1px)}
-    .btn-primary{background:var(--teal);color:#06201d;box-shadow:0 12px 34px rgba(54,211,192,.16)}
-    .btn-secondary{background:rgba(255,255,255,.06);border:1px solid var(--line);color:white}
-    .micro{font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:16px}
-    .micro span::before{content:"✓";color:var(--teal);margin-right:7px;font-weight:900}
-
-    .hero-card{
-      background:linear-gradient(180deg,rgba(16,38,55,.96),rgba(10,29,43,.96));
-      border:1px solid rgba(255,255,255,.10);border-radius:24px;padding:28px;
-      box-shadow:var(--shadow);position:relative;overflow:hidden
-    }
-    .hero-card:before{
-      content:"";position:absolute;right:-70px;top:-70px;width:190px;height:190px;border-radius:50%;
-      background:rgba(54,211,192,.08)
-    }
-    .price-label{color:var(--muted);font-size:.9rem;font-weight:700}
-    .price{font-size:3.3rem;font-weight:950;letter-spacing:-.055em;margin:4px 0}
-    .price small{font-size:1rem;color:var(--muted);letter-spacing:0;font-weight:650}
-    .card-rule{height:1px;background:var(--line);margin:22px 0}
-    .checklist{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-    .checklist li{display:flex;gap:10px;color:#e5edf3}
-    .checklist li:before{content:"✓";color:var(--teal);font-weight:950}
-    .deadline{
-      margin-top:22px;padding:14px 15px;border-radius:12px;background:rgba(242,201,109,.08);
-      border:1px solid rgba(242,201,109,.24);color:#f9df9f;font-size:.92rem
-    }
-
-    .trust-strip{border-block:1px solid var(--line);background:rgba(255,255,255,.025)}
-    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-    .trust-item{padding:22px;text-align:center;border-right:1px solid var(--line)}
-    .trust-item:last-child{border-right:0}
-    .trust-item strong{display:block;font-size:1.05rem}
-    .trust-item span{font-size:.82rem;color:var(--muted)}
-
-    section{padding:84px 0}
-    .section-kicker{color:var(--teal);font-weight:850;text-transform:uppercase;letter-spacing:.13em;font-size:.78rem}
-    h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;letter-spacing:-.045em;margin:10px 0 16px}
-    .lead{color:var(--muted);font-size:1.08rem;max-width:760px;margin-bottom:36px}
-
-    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .service{
-      background:rgba(16,38,55,.72);border:1px solid var(--line);border-radius:18px;padding:22px;min-height:215px
-    }
-    .service .num{color:var(--teal);font-weight:900;font-size:.8rem}
-    .service h3{font-size:1.18rem;margin:13px 0 9px}
-    .service p{color:var(--muted);font-size:.94rem;margin:0}
-
-    .statement{
-      background:linear-gradient(135deg,rgba(54,211,192,.12),rgba(242,201,109,.07));
-      border:1px solid rgba(54,211,192,.22);border-radius:24px;padding:38px;
-      display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center
-    }
-    .statement h2{margin-top:0}
-    .statement-steps{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-    .pill{
-      background:rgba(7,19,31,.55);border:1px solid var(--line);border-radius:13px;padding:14px 15px;
-      font-weight:780
-    }
-    .pill span{display:block;color:var(--teal);font-size:.75rem;margin-bottom:3px}
-
-    .docs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .doc{
-      padding:17px 18px;border-radius:14px;background:rgba(255,255,255,.035);
-      border:1px solid var(--line);color:#dce6ed
-    }
-    .doc b{color:var(--teal2);display:block;margin-bottom:4px}
-    .doc small{color:var(--muted)}
-
-    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
-    .price-card{
-      border:1px solid var(--line);background:rgba(16,38,55,.72);border-radius:20px;padding:26px;display:flex;flex-direction:column
-    }
-    .price-card.featured{border-color:rgba(54,211,192,.48);box-shadow:0 20px 60px rgba(54,211,192,.08);position:relative}
-    .popular{
-      position:absolute;right:18px;top:18px;background:var(--teal);color:#06201d;
-      font-size:.72rem;padding:5px 9px;border-radius:999px;font-weight:900
-    }
-    .price-card h3{font-size:1.28rem;margin:0 0 6px}
-    .price-card .amount{font-size:2.45rem;font-weight:950;letter-spacing:-.045em;margin:14px 0}
-    .price-card .amount small{font-size:.82rem;color:var(--muted);letter-spacing:0}
-    .price-card p{color:var(--muted);font-size:.92rem}
-    .price-card ul{padding-left:18px;color:#dde6ed;flex:1}
-    .price-card li{margin:8px 0}
-    .price-card .btn{width:100%;margin-top:10px}
-
-    .process{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-    .process-card{padding:20px 18px;border-top:2px solid var(--teal);background:rgba(255,255,255,.03);border-radius:0 0 14px 14px}
-    .process-card strong{display:block;margin:7px 0}
-    .process-card span{color:var(--muted);font-size:.88rem}
-
-    .form-wrap{
-      display:grid;grid-template-columns:.88fr 1.12fr;gap:34px;align-items:start;
-      background:var(--panel2);border:1px solid var(--line);border-radius:24px;padding:32px
-    }
-    .form-side p{color:var(--muted)}
-    form{display:grid;grid-template-columns:1fr 1fr;gap:13px}
-    .field{display:grid;gap:6px}
-    .field.full{grid-column:1/-1}
-    label{font-size:.82rem;color:#c7d4dd;font-weight:750}
-    input,select,textarea{
-      width:100%;border:1px solid var(--line);background:#071722;color:white;border-radius:10px;
-      padding:12px 13px;outline:none
-    }
-    input:focus,select:focus,textarea:focus{border-color:rgba(54,211,192,.55)}
-    textarea{min-height:90px;resize:vertical}
-    .form-note{grid-column:1/-1;color:var(--muted);font-size:.76rem;margin:0}
-    .success{
-      display:none;grid-column:1/-1;padding:12px;border-radius:10px;
-      background:rgba(54,211,192,.10);border:1px solid rgba(54,211,192,.25);color:var(--teal2)
-    }
-
-    .faq{display:grid;gap:10px;max-width:900px}
-    details{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-    summary{cursor:pointer;font-weight:820}
-    details p{color:var(--muted);margin-bottom:4px}
-
-    .final-cta{
-      text-align:center;background:linear-gradient(135deg,rgba(54,211,192,.14),rgba(16,38,55,.6));
-      border:1px solid rgba(54,211,192,.22);border-radius:26px;padding:52px 22px
-    }
-    .final-cta p{color:var(--muted);max-width:680px;margin:0 auto 22px}
-
-    footer{padding:34px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
-    .foot{display:grid;grid-template-columns:1fr auto;gap:20px}
-    .legal{max-width:780px}
-    .legal strong{color:#dce6ed}
-
-    .whatsapp{
-      position:fixed;right:20px;bottom:20px;z-index:60;
-      width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
-      background:#25D366;color:#052112;font-size:1.5rem;font-weight:950;box-shadow:0 14px 35px rgba(0,0,0,.28)
-    }
-
-    @media (max-width:950px){
-      .hero-grid,.statement,.form-wrap{grid-template-columns:1fr}
-      .services{grid-template-columns:repeat(2,1fr)}
-      .pricing{grid-template-columns:1fr}
-      .process{grid-template-columns:repeat(2,1fr)}
-      .trust-grid{grid-template-columns:repeat(2,1fr)}
-      .trust-item:nth-child(2){border-right:0}
-      .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
-      .nav-links a:not(.nav-cta){display:none}
-    }
-    @media (max-width:620px){
-      .hero{padding-top:55px}
-      .services,.docs,.process,.statement-steps{grid-template-columns:1fr}
-      form{grid-template-columns:1fr}
-      .field.full,.form-note,.success{grid-column:auto}
-      .hero-actions .btn{width:100%}
-      .trust-grid{grid-template-columns:1fr}
-      .trust-item{border-right:0;border-bottom:1px solid var(--line)}
-      .trust-item:last-child{border-bottom:0}
-      .foot{grid-template-columns:1fr}
-      .brand small{display:none}
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/tax.css" />
 
   <script type="application/ld+json">
   {
@@ -319,7 +82,8 @@
       <div class="nav-links">
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
-        <a href="#documents">What You Need</a>
+        <a href="/guides/">Guides</a>
+        <a href="/faq/">FAQ</a>
         <a class="nav-cta" href="https://wa.me/923123560670?text=Hi%20NuvTax%2C%20I%20need%20help%20with%20my%20income%20tax%20return." target="_blank" rel="noopener">WhatsApp Us</a>
       </div>
     </div>
@@ -395,18 +159,21 @@
           </article>
           <article class="service">
             <div class="num">02</div>
-            <h3>NTN Registration</h3>
+            <h3><a href="/ntn-registration/" style="color:inherit;text-decoration:none">NTN Registration</a></h3>
             <p>Support for first-time taxpayers who need registration before they can file their Income Tax Return through IRIS.</p>
+            <p style="margin-top:10px"><a href="/ntn-registration/" style="color:var(--teal2);font-weight:750">NTN registration →</a></p>
           </article>
           <article class="service">
             <div class="num">03</div>
-            <h3>Return Filing</h3>
+            <h3><a href="/income-tax-return-filing/" style="color:inherit;text-decoration:none">Return Filing</a></h3>
             <p>Structured preparation and filing support for salaried taxpayers, with more complex cases quoted separately.</p>
+            <p style="margin-top:10px"><a href="/income-tax-return-filing/" style="color:var(--teal2);font-weight:750">Return filing →</a></p>
           </article>
           <article class="service">
             <div class="num">04</div>
-            <h3>Hands-on Training</h3>
+            <h3><a href="/iris-training/" style="color:inherit;text-decoration:none">Hands-on Training</a></h3>
             <p>Learn the filing workflow so you can better understand IRIS, your return and the information you submit.</p>
+            <p style="margin-top:10px"><a href="/iris-training/" style="color:var(--teal2);font-weight:750">IRIS training →</a></p>
           </article>
         </div>
       </div>
@@ -592,6 +359,7 @@
       <div class="wrap">
         <div class="section-kicker">Questions</div>
         <h2>Frequently asked.</h2>
+        <p class="lead"><a href="/faq/" style="color:var(--teal2);font-weight:750">See all 15 questions →</a></p>
         <div class="faq">
           <details>
             <summary>Is NuvTax part of FBR?</summary>
@@ -622,6 +390,25 @@
     </section>
 
     <section>
+      <div class="wrap">
+        <div class="section-kicker">Explore</div>
+        <h2>More from NuvTax.</h2>
+        <p class="lead">Service details, free guides and answers to the questions we get asked most.</p>
+        <div class="docs">
+          <a class="doc" href="/income-tax-return-filing/"><b>Income Tax Return Filing</b><small>Our main filing service, from PKR 3,500</small></a>
+          <a class="doc" href="/ntn-registration/"><b>NTN Registration</b><small>For first-time taxpayers</small></a>
+          <a class="doc" href="/wealth-statement/"><b>Wealth Statement</b><small>Preparation and reconciliation</small></a>
+          <a class="doc" href="/freelancer-tax-filing/"><b>Freelancer &amp; Business Filing</b><small>Multiple sources, foreign payments</small></a>
+          <a class="doc" href="/iris-training/"><b>IRIS Training</b><small>Learn to file it yourself</small></a>
+          <a class="doc" href="/guides/"><b>Free Tax Guides</b><small>Filer status, documents, deadlines</small></a>
+          <a class="doc" href="/faq/"><b>FAQ</b><small>15 common questions answered</small></a>
+          <a class="doc" href="/about/"><b>About NuvTax</b><small>Who we are and how we work</small></a>
+          <a class="doc" href="/contact/"><b>Contact</b><small>WhatsApp and email</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <div class="wrap final-cta">
         <div class="section-kicker">Don't wait for deadline pressure</div>
         <h2>Get your return started early.</h2>
@@ -637,6 +424,17 @@
         <strong>NuvTax by Nuvforge</strong><br>
         Independent tax support and education service. NuvTax is not affiliated with, endorsed by or operated by Pakistan's Federal Board of Revenue (FBR).
         Information on this website is general in nature and should not be treated as legal or tax advice for every individual situation.
+        <br><br>
+        <a href="/income-tax-return-filing/">Return Filing</a> &nbsp;·&nbsp;
+        <a href="/ntn-registration/">NTN Registration</a> &nbsp;·&nbsp;
+        <a href="/wealth-statement/">Wealth Statement</a> &nbsp;·&nbsp;
+        <a href="/freelancer-tax-filing/">Freelancer Filing</a> &nbsp;·&nbsp;
+        <a href="/iris-training/">IRIS Training</a> &nbsp;·&nbsp;
+        <a href="/guides/">Guides</a> &nbsp;·&nbsp;
+        <a href="/faq/">FAQ</a> &nbsp;·&nbsp;
+        <a href="/about/">About</a> &nbsp;·&nbsp;
+        <a href="/contact/">Contact</a> &nbsp;·&nbsp;
+        <a href="https://nuvforge.com/">Nuvforge</a>
       </div>
       <div>© <span id="year"></span> Nuvforge. All rights reserved.</div>
     </div>

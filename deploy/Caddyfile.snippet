@@ -1,0 +1,33 @@
+# ==== Nuvforge blocks: append to /root/Eliseenterprise.com/Caddyfile ====
+# Caddy issues and renews Let's Encrypt certificates automatically once DNS points here.
+
+nuvforge.com, www.nuvforge.com {
+    root * /srv/nuvforge/site
+    file_server
+    encode gzip zstd
+
+    @www host www.nuvforge.com
+    redir @www https://nuvforge.com{uri} permanent
+
+    @static path *.woff2 *.png *.jpg *.svg *.css *.js
+    header @static Cache-Control "public, max-age=2592000, immutable"
+
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+}
+
+tax.nuvforge.com {
+    root * /srv/nuvforge/tax
+    file_server
+    encode gzip zstd
+
+    @static path *.woff2 *.png *.jpg *.svg *.css *.js
+    header @static Cache-Control "public, max-age=2592000, immutable"
+
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+}
