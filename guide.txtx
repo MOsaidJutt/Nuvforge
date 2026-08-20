@@ -1,0 +1,2 @@
+Your GitHub repo is private, so the VPS can't clone it. I deployed via scp. Either make it public or add a deploy key if you want git pull deploys.
+Everything is pushed to GitHub, and I saved the VPS setup to memory so I won't mis-plan the stack again.
